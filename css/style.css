@@ -1,0 +1,133 @@
+/*Import fonts from Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script&family=Gugi&family=Lato:ital,wght@1,300&family=MonteCarlo&family=Sofia&family=Style+Script&display=swap');
+
+:root{
+    --light-gray:#2b3032a1;
+    --primary-color:navy;
+    --border:#2b303218;
+    --text-color:#ff686b;
+    --roboto:"Roboto",sans-serif;
+    --gugi:"Gugi",cursive;
+    --sofia:"Sofia",cursive;
+}
+
+.primary-color{
+    color:var(--primary-color); 
+}
+
+.bg-primary-color{
+    color:var(--primary-color)!important;
+}
+
+.text-color{
+    color:var(--text-color);
+}
+
+.font-roboto{
+    font-family: var(--roboto);
+}
+
+.lightblue{
+    color:lightblue;
+}
+
+header{
+    background-color: var(--primary-color);
+    font-family: var(--roboto);
+}
+
+header .site-title{
+    font-family: var(--sofia);
+}
+
+.container .dropdown-toggle,
+.container .dropdown-item{
+    font-size:0.7em;
+}
+
+.header-links a{
+    font-size:0.9em;
+    text-decoration: none;
+    color:white;
+}
+
+/* Navigation menu*/
+
+.navbar-nav{
+    padding:0.8em 0em;
+}
+
+.navbar-nav .nav-link{
+    font-size:0.9em;
+    color:var(--light-gray)!important;
+}
+
+.navbar-nav .nav-item .nav-link{
+    padding:0 1.3em;
+}
+
+.navbar-nav .cart-icon{
+margin-right: 6.5rem!important;
+}
+
+.carousel-inner{
+    height:400px !important;
+}
+  
+.carousel-content {
+    position: absolute;
+    bottom: 60%;
+    left: 5%;
+    z-index: 20;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  }
+
+  .cwarousel-control-prev,.carwousel-control-next{
+      width:40px !important;
+      height:40px !important;
+      order:3px solid white;
+      padding:20px !important;
+      border-radius: 20px;
+      top:50%;
+      
+     
+      
+  }
+
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 40px;
+    width: 40px;
+    outline: red;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-size: 50%, 50%;
+    border-radius: 50%;
+    border: 3px solid white;
+    padding:10px;
+}
+
+.carousel-control-prev-icon:hover, .carousel-control-next-icon:hover{
+    background-color: navy;
+    
+}
+
+.slide-one-text{
+    font-family: var(--roboto);
+    font-weight: bold;
+    font-size: 30px;
+    text-align: left;
+}
+
+.slide-one-button{
+    
+    padding: 15px;
+    border-radius: 30px;
+    border:2px outset red;
+    background-color: red;
+    color:white;
+    font-family:var(--gugi);
+    font-weight: bolder;
+    font-size:25px;
+    font-variant: small-caps;
+    
+}
