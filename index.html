@@ -28,6 +28,7 @@
     <!--// Add the new slick-theme.css if you want the default styling-->
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     
+    
 
 </head>
 <body>
@@ -207,11 +208,144 @@
             </button>
           </div> -->
 
+          <!-- What makes us special-->
+          <!-- <div class="grid special">
+            <div class="g-col-6 g-col-md-4 one">What makes us special!</div>
+            <div class="g-col-6 g-col-md-4 two">Bla Bla Bla</div>
+          </div> -->
+
+          <!--<div class="container fada">
+            <div class="row special">
+                <div class="col-md-6 one">  
+                   <a href="">About</a>
+                </div>
+               
+                <div class="col-md-6 two"> 
+                    <a href="#myModal1" data-toggle="modal">SHARE</a>
+                </div>
+             </div>
+         </div>-->
+
+         <div class="container-fluid fada"> <!-- If Needed Left and Right Padding in 'md' and 'lg' screen means use container class -->
+          <div class="row special">
+              <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 one typed">
+                  
+                  <p>Ask!. <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+                </div>
+            
+                <script>
+                    const typedTextSpan = document.querySelector(".typed-text");
+                    const cursorSpan = document.querySelector(".cursor");
+                    
+                    const textArray = ["Who are we?", "Where are we?", "What we do?", "Why?"];
+                    const typingDelay = 200;
+                    const erasingDelay = 100;
+                    const newTextDelay = 2000; // Delay between current and next text
+                    let textArrayIndex = 0;
+                    let charIndex = 0;
+                    
+                    function type() {
+                      if (charIndex < textArray[textArrayIndex].length) {
+                        if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+                        typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+                        charIndex++;
+                        setTimeout(type, typingDelay);
+                      } 
+                      else {
+                        cursorSpan.classList.remove("typing");
+                        setTimeout(erase, newTextDelay);
+                      }
+                    }
+                    
+                    function erase() {
+                      if (charIndex > 0) {
+                        if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+                        typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
+                        charIndex--;
+                        setTimeout(erase, erasingDelay);
+                      } 
+                      else {
+                        cursorSpan.classList.remove("typing");
+                        textArrayIndex++;
+                        if(textArrayIndex>=textArray.length) textArrayIndex=0;
+                        setTimeout(type, typingDelay + 1100);
+                      }
+                    }
+                    
+                    document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
+                      if(textArray.length) setTimeout(type, newTextDelay + 250);
+                    });
+                </script>
+
+              
+             
+              <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 two">
+                  <p id = "typedtext" class = "typed-description"></p>
+              </div>
+              <script>
+                        // set up text to print, each item in array is new line
+                  var aText = new Array(
+                  "Welcome to spiritual drug and glock shopping :", 
+                  "This website is owned by multiple plugs all over the globe. We all have our own Instagram and Snapchat where we were meeting our clients one on one but after sometime we discovered many of our clients were getting scammed so we decided to create on website which it's legitimate and above but our main plug in the USA. In this website you can place your order no matter the your destination cause this is a network of plugs around you. We got plugs in Canada,USA,Australia,UK,Switzerland,Germany,Spain,France Italy!",
+                  "This website is to end scams and frauds all the global. You placing your order here is safe and help secured with your delivery infos you just need to place your order and do your payment so the closest plug beside you can mail what so ever you order thanks to discreet mailing."
+                  );
+                  var iSpeed = 100; // time delay of print out
+                  var iIndex = 0; // start printing array at this posision
+                  var iArrLength = aText[0].length; // the length of the text array
+                  var iScrollAt = 20; // start scrolling up at this many lines
+                  
+                  var iTextPos = 0; // initialise text position
+                  var sContents = ''; // initialise contents variable
+                  var iRow; // initialise current row
+                  
+                  function typewriter()
+                  {
+                  sContents =  ' ';
+                  iRow = Math.max(0, iIndex-iScrollAt);
+                  var destination = document.getElementById("typedtext");
+                  
+                  while ( iRow < iIndex ) {
+                    sContents += aText[iRow++] + '<br />';
+                  }
+                  destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+                  if ( iTextPos++ == iArrLength ) {
+                    iTextPos = 0;
+                    iIndex++;
+                    if ( iIndex != aText.length ) {
+                    iArrLength = aText[iIndex].length;
+                    setTimeout("typewriter()", 500);
+                    }
+                  } else {
+                    setTimeout("typewriter()", iSpeed);
+                  }
+                  }
+
+
+                    typewriter();
+
+              </script>
+          </div>
+      </div>
+
+         
     </main>
     <footer></footer>
     
 
-
+     <!--typed-->
+     <!--<script src="./js/typed.js"></script>
+     <script>
+       var typed = new Typed('.animate', {
+         strings: [
+           "Who we are?",
+           "Where we're from?",
+           "What we do?"
+         ],
+         typeSpeed: 50,
+         backSpeed: 50,
+         loop:true
+       });
+     </script>-->
     
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
@@ -223,6 +357,22 @@
     <script src = "./js/main.js"></script>
 
     
+
+    <!--typed-->
+    <script src="./js/typed.js"></script>
+    <script>
+      var typed = new Typed('.animate', {
+        strings: [
+          "Who we are?",
+          "Where we're from?",
+          "What we do?"
+        ],
+        typeSpeed: 50,
+        backSpeed: 50,
+        loop:true
+      });
+    </script>
+
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
