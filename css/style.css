@@ -1,6 +1,10 @@
 /*Import fonts from Google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script&family=Gugi&family=Lato:ital,wght@1,300&family=MonteCarlo&family=Sofia&family=Style+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Serif:ital@0;1&family=Playball&family=Vollkorn:ital,wght@0,400;1,500&display=swap');
+
+
+
 :root{
     --light-gray:#2b3032a1;
     --primary-color:navy;
@@ -11,6 +15,10 @@
     --sofia:"Sofia",cursive;
     --script:"Dancing Script",impallary;
     --playball:"Playball",swap;
+    --playball-cursive:'Playball',cursive;
+    --lobster:'Lobster',cursive;
+    --noto:'Noto Serif',serif;
+    --vollkorn:'Vollkorn',serif;
 }
 
 .primary-color{
@@ -122,7 +130,7 @@ margin-right: 6.5rem!important;
     }
 
     .slide-2{
-        top : 50%;
+        top : 55%;
     }
 
     .slide-4{
@@ -137,7 +145,7 @@ margin-right: 6.5rem!important;
     }
 
     .slide-2{
-    top:35%;
+    top:30%;
 }
 
     .slide-3{
@@ -153,7 +161,7 @@ margin-right: 6.5rem!important;
 
 @media only screen and (min-width:992px){
     .slide-3{
-        top:20%;
+        top:10%;
     }
 
     .slide-4{
@@ -393,3 +401,81 @@ body{
       font-weight: lighter;
   }
   /*end*/
+
+  /*start shopping*/
+
+  #start-shopping{
+        /*display: flex;
+        flex-direction: row;*/
+        justify-content: center;
+        background-color:white;
+        
+
+  }
+
+  .start-shopping-row{
+      display: flex;
+      justify-content: center;
+      padding:5px;
+      margin:2px;
+      background-color:rgb(115, 192, 218);
+  }
+
+  .start-shopping{
+        background-color:ghostwhite;
+        /*height:200px;*/
+        margin: 10px;
+        padding:20px;
+  }
+
+  #start-shopping-image-one{
+      max-width:70%;
+      height:auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding-right: 25px;
+      
+  }
+
+  #start-shopping-image-two{
+    max-width:70%;
+    height:auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 10px;
+}
+
+#start-shopping-image-three{
+    max-width:70%;
+    height:auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 10px;
+}
+
+#start-shopping-image-four{
+    max-width:70%;
+    height:auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 5px;
+}
+
+  .start-shopping h2{
+      text-align: center;
+      font-weight: bold;
+      font-family:var(--noto);
+      
+  }
+
+  .start-shopping p{
+    text-align: center;
+    font-weight: lighter;
+    font-family: var(--gugi);
+    color:auto;
+}
+
