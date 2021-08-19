@@ -560,7 +560,7 @@ body{
       border-radius: 50%;
   }
 
-  @media only screen and (max-width:600px){
+  @media only screen and (max-width:640px){
     div.content{
         height:125px;
     }
@@ -570,7 +570,7 @@ body{
     }
   }
 
-  @media only screen and (min-width:600px){
+  @media only screen and (min-width:640px){
     div.content{
         height:165px;
     }
