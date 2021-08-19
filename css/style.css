@@ -533,13 +533,14 @@ body{
     font-family: var(--lobster);
     font-size: 40px;
     font-weight: bolder;
-    color:
+    
 }
 .product-row{
     display:flex;
     flex-direction: row;
     backgrosund:red;
     width:100%;
+    margin-top: 20px;
     /*border: 1px solid red;*/
   }
   div.content{
@@ -554,12 +555,12 @@ body{
   .product-title{
     text-align:center;
     bottom:0%;
-    border:1px solid green;
+    /*border:1px solid green;*/
     backgground:chocolate;
     font-family: var(--noto);
     font-size: 20px;
     font-weight: lighter;
-    color:
+    
 
   }
 
