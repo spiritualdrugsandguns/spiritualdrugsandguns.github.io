@@ -556,7 +556,7 @@ body{
     font-size: 40px;
     font-weight: bolder;
     padding:20px;
-    color:rgb(96, 149, 184);
+    color:rgb(121, 173, 207);
     text-decoration: underline;
     
 }
@@ -598,6 +598,15 @@ body{
   }
 
   @media only screen and (max-width:640px){
+
+    .product-container>h2{
+        font-size: 35px;
+    }
+
+    .product-row{
+        margin-left: 10px;
+        margin-right:5px;
+    }
     div.content{
         height:125px;
     }
