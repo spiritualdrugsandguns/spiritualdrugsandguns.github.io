@@ -526,7 +526,7 @@ body{
     border: 1px solid red;
   }
   div.content{
-    height:200px;
+    height:310px;
     width:20%;
     backgwround:blue;
     border: 1px solid blue;
@@ -536,5 +536,32 @@ body{
 
   .product-info{
     text-align:center;
+    bottom:0%;
+    border:1px solid green;
+    background:chocolate;
 
   }
+
+  .product-img{
+      height:280px;
+      width:100%;
+      border-radius: 50%;
+  }
+
+  @media only screen and (max-width:600px){
+    div.content{
+        height:125px;
+    }
+
+    .product-img{
+        height:100px;
+    }
+  }
+
+  @media only screen and (min-width:600px){
+      
+}
+
+@media only screen and (max-width:600px){
+      
+}
