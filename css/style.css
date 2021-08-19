@@ -376,11 +376,11 @@ body{
 .typed p {
     font-size: 3rem;
     padding: 0.5rem;
-    font-weight: bolder;
+    font-weight: lighter;
     letter-spacing: 0.1rem;
     text-align: center;
     overflow: hidden;
-    font-family: var(--script);
+    font-family: var(--lobster);
   }
   .typed p span.typed-text {
     font-weight: normal;
@@ -410,9 +410,11 @@ body{
 }
 
     .typed-description{
-      font-family: var(--playball);
-      font-size: larger;
+      font-family: var(--noto);
+      font-size: large;
       font-weight: lighter;
+      padding: 10px;
+      
   }
   /*end*/
 
