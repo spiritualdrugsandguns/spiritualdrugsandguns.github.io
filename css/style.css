@@ -254,7 +254,8 @@ margin-right: 6.5rem!important;
     left:50%;
     bottom:40px;
     transform: translate(-50%,-50%);
-    font-size:8em;
+    font-size:7em;
+
 }
 
 .anime h2:nth-child(1){
@@ -310,7 +311,11 @@ margin-right: 6.5rem!important;
     backgrround-color: brown;
 }
 .special{
-    background-color: rgb(240, 238, 238);
+    /*background-color: rgb(240, 238, 238);*/
+    background:white;
+    box-shadow: 2px 2px 5px 5px lightgray;
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding:5px;
    
     
@@ -518,6 +523,10 @@ body{
     border:1px solid black;
     
 }
+
+.product-container>h2{
+    text-align: center;
+}
 .product-row{
     display:flex;
     flex-direction: row;
@@ -526,7 +535,7 @@ body{
     border: 1px solid red;
   }
   div.content{
-    height:310px;
+    max-height:310px;
     width:20%;
     backgwround:blue;
     border: 1px solid blue;
@@ -539,11 +548,14 @@ body{
     bottom:0%;
     border:1px solid green;
     background:chocolate;
+    z-index: 20;
 
   }
 
   .product-img{
-      height:280px;
+      max-height:300px;
+      height: auto;
+      max-width:100%;
       width:100%;
       border-radius: 50%;
   }
@@ -559,9 +571,33 @@ body{
   }
 
   @media only screen and (min-width:600px){
-      
-}
+    div.content{
+        height:165px;
+    }
 
-@media only screen and (max-width:600px){
-      
-}
+    .product-img{
+        height:140px;
+    }
+  }
+
+
+
+@media only screen and (min-width:768px){
+    div.content{
+        height:220px;
+    }
+
+    .product-img{
+        height:195px;
+    }
+  }
+
+  @media only screen and (min-width:992px){
+    div.content{
+        height:300px;
+    }
+
+    .product-img{
+        height:270px;
+    }
+  }
