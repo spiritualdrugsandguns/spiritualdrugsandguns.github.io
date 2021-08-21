@@ -27,7 +27,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/> 
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css"/>
     
-    
+    <script type = "text/javascript" src = "app.js" async></script>
 
 </head>
 <body>
@@ -62,7 +62,7 @@
         <div class="container-fluid p-0">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="#">HOME</a>
+                  <a class="navbar-brand" href="index.html">HOME</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -203,12 +203,12 @@
   <section class="products">
     <div class="container product__center">
       <!-- Single Product -->
-      <div class="row product">
+      <!--<div class="product">
         <div class="image__container">
-          <img src="./images/pyschedelic/samples/psychedelic_sample_ketamine.jpeg" alt="" />
+          <img src=${image} alt="" />
         </div>
         <div class="product__footer">
-          <h1>The Original Super Donut</h1>
+          <h1>${title}</h1>
           <div class="rating">
             <span>
               <svg>
@@ -238,453 +238,13 @@
           </div>
           <div class="bottom">
             <div class="btn__group">
-              <a href="#" class="btn addToCart">Add to Cart</a>
+              <a href="#" class="btn addToCart" data-id = ${id} >Add to Cart</a>
               <a href="#" class="btn view">View</a>
             </div>
-            <div class="price">$255.99</div>
+            <div class="price">$${price}</div>
           </div>
         </div>
-      </div> 
-      <!-- End of Single Product -->
-      <!-- Single Product -->
-      <div class="product">
-        <div class="image__container">
-          <img src="./images/pyschedelic/samples/psychedelic_sample_cactus.jpeg" alt="" />
-        </div>
-        <div class="product__footer">
-          <h1>The Original Super Donut</h1>
-          <div class="rating">
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-              </svg>
-            </span>
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-              </svg>
-            </span>
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-              </svg>
-            </span>
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-              </svg>
-            </span>
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
-              </svg>
-            </span>
-          </div>
-          <div class="bottom">
-            <div class="btn__group">
-              <a href="#" class="btn addToCart">Add to Cart</a>
-              <a href="#" class="btn view">View</a>
-            </div>
-            <div class="price">$255.99</div>
-          </div>
-        </div>
-      </div> 
-      <!-- End of Single Product -->
-      <!-- Single Product -->
-      <div class="product">
-        <div class="image__container">
-          <img src="./images/pyschedelic/samples/psychedelic_sample_cocaine.jpeg" alt="" />
-        </div>
-        <div class="product__footer">
-          <h1>The Original Super Donut</h1>
-          <div class="rating">
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-              </svg>
-            </span>
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-              </svg>
-            </span>
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-              </svg>
-            </span>
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-              </svg>
-            </span>
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
-              </svg>
-            </span>
-          </div>
-          <div class="bottom">
-            <div class="btn__group">
-              <a href="#" class="btn addToCart">Add to Cart</a>
-              <a href="#" class="btn view">View</a>
-            </div>
-            <div class="price">$255.99</div>
-          </div>
-        </div>
-      </div> 
-      <!-- End of Single Product -->
-      <!-- Single Product -->
-      <div class="product">
-        <div class="image__container">
-          <img src="./images/product-1.jpg" alt="" />
-        </div>
-        <div class="product__footer">
-          <h1>The Original Super Donut</h1>
-          <div class="rating">
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-              </svg>
-            </span>
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-              </svg>
-            </span>
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-              </svg>
-            </span>
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-              </svg>
-            </span>
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
-              </svg>
-            </span>
-          </div>
-          <div class="bottom">
-            <div class="btn__group">
-              <a href="#" class="btn addToCart">Add to Cart</a>
-              <a href="#" class="btn view">View</a>
-            </div>
-            <div class="price">$255.99</div>
-          </div>
-        </div>
-      </div> 
-      <!-- End of Single Product -->
-      <!-- Single Product -->
-      <div class="product">
-        <div class="image__container">
-          <img src="./images/product-1.jpg" alt="" />
-        </div>
-        <div class="product__footer">
-          <h1>The Original Super Donut</h1>
-          <div class="rating">
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-              </svg>
-            </span>
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-              </svg>
-            </span>
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-              </svg>
-            </span>
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-              </svg>
-            </span>
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
-              </svg>
-            </span>
-          </div>
-          <div class="bottom">
-            <div class="btn__group">
-              <a href="#" class="btn addToCart">Add to Cart</a>
-              <a href="#" class="btn view">View</a>
-            </div>
-            <div class="price">$255.99</div>
-          </div>
-        </div>
-      </div> 
-      <!-- End of Single Product -->
-      <!-- Single Product -->
-      <div class="product">
-        <div class="image__container">
-          <img src="./images/product-1.jpg" alt="" />
-        </div>
-        <div class="product__footer">
-          <h1>The Original Super Donut</h1>
-          <div class="rating">
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-              </svg>
-            </span>
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-              </svg>
-            </span>
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-              </svg>
-            </span>
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-              </svg>
-            </span>
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
-              </svg>
-            </span>
-          </div>
-          <div class="bottom">
-            <div class="btn__group">
-              <a href="#" class="btn addToCart">Add to Cart</a>
-              <a href="#" class="btn view">View</a>
-            </div>
-            <div class="price">$255.99</div>
-          </div>
-        </div>
-      </div> 
-      <!-- End of Single Product -->
-      <!-- Single Product -->
-      <div class="product">
-        <div class="image__container">
-          <img src="./images/product-1.jpg" alt="" />
-        </div>
-        <div class="product__footer">
-          <h1>The Original Super Donut</h1>
-          <div class="rating">
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-              </svg>
-            </span>
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-              </svg>
-            </span>
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-              </svg>
-            </span>
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-              </svg>
-            </span>
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
-              </svg>
-            </span>
-          </div>
-          <div class="bottom">
-            <div class="btn__group">
-              <a href="#" class="btn addToCart">Add to Cart</a>
-              <a href="#" class="btn view">View</a>
-            </div>
-            <div class="price">$255.99</div>
-          </div>
-        </div>
-      </div> 
-      <!-- End of Single Product -->
-      <!-- Single Product -->
-      <div class="product">
-        <div class="image__container">
-          <img src="./images/product-1.jpg" alt="" />
-        </div>
-        <div class="product__footer">
-          <h1>The Original Super Donut</h1>
-          <div class="rating">
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-              </svg>
-            </span>
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-              </svg>
-            </span>
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-              </svg>
-            </span>
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-              </svg>
-            </span>
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
-              </svg>
-            </span>
-          </div>
-          <div class="bottom">
-            <div class="btn__group">
-              <a href="#" class="btn addToCart">Add to Cart</a>
-              <a href="#" class="btn view">View</a>
-            </div>
-            <div class="price">$255.99</div>
-          </div>
-        </div>
-      </div> 
-      <!-- End of Single Product -->
-      <!-- Single Product -->
-      <div class="product">
-        <div class="image__container">
-          <img src="./images/product-1.jpg" alt="" />
-        </div>
-        <div class="product__footer">
-          <h1>The Original Super Donut</h1>
-          <div class="rating">
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-              </svg>
-            </span>
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-              </svg>
-            </span>
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-              </svg>
-            </span>
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-              </svg>
-            </span>
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
-              </svg>
-            </span>
-          </div>
-          <div class="bottom">
-            <div class="btn__group">
-              <a href="#" class="btn addToCart">Add to Cart</a>
-              <a href="#" class="btn view">View</a>
-            </div>
-            <div class="price">$255.99</div>
-          </div>
-        </div>
-      </div> 
-      <!-- End of Single Product -->
-      <!-- Single Product -->
-      <div class="product">
-        <div class="image__container">
-          <img src="./images/product-1.jpg" alt="" />
-        </div>
-        <div class="product__footer">
-          <h1>The Original Super Donut</h1>
-          <div class="rating">
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-              </svg>
-            </span>
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-              </svg>
-            </span>
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-              </svg>
-            </span>
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-              </svg>
-            </span>
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
-              </svg>
-            </span>
-          </div>
-          <div class="bottom">
-            <div class="btn__group">
-              <a href="#" class="btn addToCart">Add to Cart</a>
-              <a href="#" class="btn view">View</a>
-            </div>
-            <div class="price">$255.99</div>
-          </div>
-        </div>
-      </div> 
-      <!-- End of Single Product -->
-      <!-- Single Product -->
-      <div class="product">
-        <div class="image__container">
-          <img src="./images/product-1.jpg" alt="" />
-        </div>
-        <div class="product__footer">
-          <h1>The Original Super Donut</h1>
-          <div class="rating">
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-              </svg>
-            </span>
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-              </svg>
-            </span>
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-              </svg>
-            </span>
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-full"></use>
-              </svg>
-            </span>
-            <span>
-              <svg>
-                <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
-              </svg>
-            </span>
-          </div>
-          <div class="bottom">
-            <div class="btn__group">
-              <a href="#" class="btn addToCart">Add to Cart</a>
-              <a href="#" class="btn view">View</a>
-            </div>
-            <div class="price">$255.99</div>
-          </div>
-        </div>
-      </div> 
+      </div> -->
       <!-- End of Single Product -->
     </div>
   </section>
@@ -697,16 +257,16 @@
         </svg>
       </span>
       <h1>Your Cart</h1>
-      <div class="cart__centent">
+      <div class="cart__center">
         <!-- Cart Item -->
-        <div class="cart__item">
+        <!--<div class="cart__item">
           <img src="./images/product-1.jpg" alt="">
           <div>
             <h3>The Original Super Donut</h3>
             <h3 class="price">$750</h3>
           </div>
           <div>
-            <span>
+            <span data-id = ${id}>
               <svg>
                 <use xlink:href="./images/sprite.svg#icon-angle-up"></use>
               </svg>
@@ -725,7 +285,7 @@
               </svg>
             </span>
           </div>
-        </div> 
+        </div> -->
       </div>
 
       <div class="cart__footer">
@@ -735,7 +295,7 @@
     </div>
   </section>
 
-  <script src="app.js"></script>
+  
         
       
       
