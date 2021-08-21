@@ -647,3 +647,14 @@ body{
         height:270px;
     }
   }
+
+/*first modal*/
+#staticBackdropLabel-head{
+    font-family: var(--lobster);
+    text-align: center;
+}
+
+#staticBackdrop-head{
+    text-align: center;
+    font-family: var(--roboto);
+}
